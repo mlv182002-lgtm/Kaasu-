@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>Kaasu Enga Pochu</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="theme-color" content="#15803d"><title>Kaasu Enga Pochu</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%2315803d%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2221%22%20fill%3D%22%23dcfce7%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2216.5%22%20fill%3D%22none%22%20stroke%3D%22%2315803d%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2241%22%20font-size%3D%2225%22%20font-weight%3D%22800%22%20text-anchor%3D%22middle%22%20fill%3D%22%2315803d%22%20font-family%3D%22system-ui%2Csans-serif%22%3E%E2%82%B9%3C%2Ftext%3E%3C%2Fsvg%3E">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%2315803d%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2221%22%20fill%3D%22%23dcfce7%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2216.5%22%20fill%3D%22none%22%20stroke%3D%22%2315803d%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2241%22%20font-size%3D%2225%22%20font-weight%3D%22800%22%20text-anchor%3D%22middle%22%20fill%3D%22%2315803d%22%20font-family%3D%22system-ui%2Csans-serif%22%3E%E2%82%B9%3C%2Ftext%3E%3C%2Fsvg%3E">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -9,18 +9,18 @@
 :root[data-theme="dark"]{--bg:#0b1a11;--cd:#12261a;--tx:#e6f6ea;--mu:#8fb09b;--g:#4ade80;--g2:#173a25;--bd:#24452f;--rd:#f87171;--am:#fbbf24}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:640px;margin:auto;padding:12px 12px 30px}
+main{max-width:640px;margin:auto;padding:12px 12px 96px}
 h1{margin:0;font-size:20px;color:var(--g)}h2{font-size:15px;margin:0 0 8px}small,.mu{color:var(--mu)}
 .hd{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .sv{font-size:12px;color:var(--g);background:var(--g2);padding:4px 10px;border-radius:12px;white-space:nowrap}
 .c{background:var(--cd);border:1px solid var(--bd);border-radius:16px;padding:14px;margin-bottom:12px}
-.hero{background:var(--g);color:#fff;border:0;text-align:center}.hero small{color:#d1fae5}
+.hero{background:var(--g);color:var(--on,#fff);border:0;text-align:center}.hero small{color:var(--on,#fff);opacity:.85}
 .big{font-size:42px;font-weight:800;line-height:1.1}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)}.row:last-child{border:0}
 .r{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:6px 0}
 input,select,button{font:inherit;padding:9px;border:1px solid var(--bd);border-radius:10px;background:var(--cd);color:var(--tx);max-width:100%}
 input[type=number]{width:100px}input[type=text]{width:140px}
-button{cursor:pointer}.b{background:var(--g);color:#fff;border:0}.s{background:var(--g2);color:var(--g);border:0}
+button{cursor:pointer}.b{background:var(--g);color:var(--on,#fff);border:0}.s{background:var(--g2);color:var(--g);border:0}
 .x{border:0;background:none;color:var(--rd);padding:4px}
 .bar{height:8px;background:var(--g2);border-radius:5px;overflow:hidden;margin:4px 0}.bar i{display:block;height:100%;background:var(--g)}
 .bad{color:var(--rd)}.ok{color:var(--g)}.warn{color:var(--am)}
@@ -28,8 +28,8 @@ button{cursor:pointer}.b{background:var(--g);color:#fff;border:0}.s{background:v
 @media (prefers-color-scheme:dark){.w{background:#3b1414;color:#fecaca}.wa{background:#3d2e0a;color:#fde68a}}
 nav{position:sticky;top:env(safe-area-inset-top,0px);display:flex;gap:4px;background:var(--bg);padding:8px 0;margin-bottom:6px;z-index:5}
 nav button{flex:1;border:1px solid var(--bd);border-radius:12px;background:var(--cd);padding:8px 2px;font-size:12px;color:var(--mu)}nav button b{display:block;font-size:20px}
-nav button.on{color:#fff;background:var(--g);border-color:var(--g);font-weight:700}
-.ts{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(24px + env(safe-area-inset-bottom,0px));background:#14532d;color:#fff;padding:10px 18px;border-radius:24px;opacity:0;transition:.25s;pointer-events:none;z-index:9;max-width:90%;text-align:center}.ts.on{opacity:1}
+nav button.on{color:var(--on,#fff);background:var(--g);border-color:var(--g);font-weight:700}
+.ts{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(24px + env(safe-area-inset-bottom,0px));background:var(--gd,#14532d);color:#fff;padding:10px 18px;border-radius:24px;opacity:0;transition:.25s;pointer-events:none;z-index:9;max-width:90%;text-align:center}.ts.on{opacity:1}
 .sc{font-size:44px;font-weight:800;color:var(--g)}
 textarea{width:100%;font:12px monospace;background:var(--cd);color:var(--tx);border:1px solid var(--bd);border-radius:8px}
 details summary{cursor:pointer;color:var(--g);font-weight:600}
@@ -38,7 +38,7 @@ nav{gap:3px}nav button{font-size:11px}nav button b{font-size:19px}
 .tb{position:relative;height:80px;margin:2px 0}.tb u,.tb i{position:absolute;bottom:0;border-radius:4px 4px 0 0;text-decoration:none}
 .tb u{left:8%;right:8%;background:var(--g2)}.tb i{left:24%;right:24%;background:var(--g)}
 </style></head><body><main>
-<div class="hd"><div style="display:flex;gap:10px;align-items:center"><svg width="46" height="46" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#15803d"/><circle cx="32" cy="32" r="21" fill="#dcfce7"/><circle cx="32" cy="32" r="16.5" fill="none" stroke="#15803d" stroke-width="2"/><text x="32" y="41" font-size="25" font-weight="800" text-anchor="middle" fill="#15803d" font-family="system-ui,sans-serif">₹</text></svg><div><h1>Kaasu Enga Pochu?</h1><small>Where did the money go?</small></div></div><div style="display:flex;gap:6px;align-items:center"><span class="sv" id="st">Not saved yet</span><button class="s" id="snd" onclick="tg()" style="padding:6px 10px" title="Voice alerts on/off">🔊</button></div></div>
+<div class="hd"><div style="display:flex;gap:10px;align-items:center"><svg id="lg" width="46" height="46" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#15803d"/><circle cx="32" cy="32" r="21" fill="#dcfce7"/><circle cx="32" cy="32" r="16.5" fill="none" stroke="#15803d" stroke-width="2"/><text x="32" y="41" font-size="25" font-weight="800" text-anchor="middle" fill="#15803d" font-family="system-ui,sans-serif">₹</text></svg><div><h1>Kaasu Enga Pochu?</h1><small>Where did the money go?</small></div></div><div style="display:flex;gap:6px;align-items:center"><span class="sv" id="st">Not saved yet</span><button class="s" id="snd" onclick="tg()" style="padding:6px 10px" title="Voice alerts on/off">🔊</button></div></div>
 <nav id="nv"></nav><div id="app"></div>
 </main><div class="ts" id="ts"></div>
 <div id="lk" style="display:none;position:fixed;inset:0;z-index:99;background:var(--bg);align-items:center;justify-content:center;padding:20px;text-align:center"><div class="c" style="max-width:320px;width:100%"><div style="font-size:40px">🔒</div><h2>Kaasu Enga Pochu</h2><small>Enter your PIN to open</small>
@@ -51,10 +51,10 @@ const CATS=['Food','Fuel','Car service','Shopping','Friends trip','Misc'];
 const K={rent:['🏠','Rent'],bill:['💡','Bill / subscription'],emi:['🏦','EMI / loan'],sip:['📈','Mutual fund SIP'],gold:['🪙','Gold'],save:['🛟','Other saving (RD/PPF)']};
 const grp=x=>x.pm?'pm':x.k=='rent'||x.k=='bill'?'bills':x.k=='emi'?'emi':'inv';
 const MIL={n:'HDFC Millennia',r:{Food:5,Shopping:5,Fuel:0,'Car service':1,'Friends trip':1,Misc:1},cap:1000,w:{p:1,min:400,max:5000,cap:250}};
-const N=new Date(),td=iso(N),pe=new Date(lwd(N.getMonth()?N.getFullYear():N.getFullYear()-1,(N.getMonth()+11)%12)+'T00:00');pe.setDate(pe.getDate()+1);
+let td=iso(new Date());const N=new Date(),pe=new Date(lwd(N.getMonth()?N.getFullYear():N.getFullYear()-1,(N.getMonth()+11)%12)+'T00:00');pe.setDate(pe.getDate()+1);
 let u=0;const id=()=>Date.now()+(u++);
 const mk=(n,k,day,left)=>({id:id(),n,k,amt:0,day,left:left||0,a:0});
-let S={v:2,snd:1,vm:'auto',lim:25000,warn:20000,buf:2500,due:0,sal:0,cs:iso(pe),ce:lwd(N.getFullYear(),N.getMonth()),prev:0,
+let S={v:2,fp:0,fsr:1,fgst:18,snd:1,vm:'auto',lim:25000,warn:20000,buf:2500,due:0,sal:0,cs:iso(pe),ce:lwd(N.getFullYear(),N.getMonth()),prev:0,
 it:[mk('House rent','rent',1),mk('Electricity','bill',10),mk('WiFi','bill',5),mk('Mobile recharge','bill',15),mk('OTT','bill',20),mk('Google storage','bill',20),mk('Car EMI','emi',5),mk('Credit card EMI','emi',5),mk('Mutual fund SIP','sip',1),mk('Gold','gold',1)],
 b:{Food:0,Fuel:0,'Car service':0,Shopping:0,'Friends trip':0,Misc:0,EMI:0},ef:{bal:0,log:[]},t:[],cards:[MIL],card:0,h:[],ul:null,vn:'',en:1,fx:1};
 let tab='home',fh=null,fst='none',last='';
@@ -152,7 +152,7 @@ function home(m){const sc=score(m),w=AL(m);
  const used=Math.min(100,Math.max(0,(S.sal-m.left)/S.sal*100)),r=rew(S.card,m.T),msg=m.safe<0?'Aiyoo! Budget over aagiduchu 😱':m.safe/S.sal<.1?'Careful bro, konjam tight 😬':'Semma! Control-la irukku 😎';
  const dayn=d=>{const n=Math.round((new Date(d+'T00:00')-new Date(td+'T00:00'))/864e5);return n<0?`<b class="bad">${-n}d overdue</b>`:n==0?'<b class="warn">today</b>':`in ${n}d`};
  const flow=[['🏠 Rent & bills',m.G.bills],['🏦 Car loan, housing & other EMIs (this month)',m.G.emi],['📈 Savings & SIP',m.G.inv],['🕘 Last month dues (card bill + card EMI)',S.prev+m.G.pm],['📱 GPay & cash spends',m.cash]].concat(m.ex?[['💳 Card spends above '+f(S.lim)+' (paid now via GPay)',m.ex]]:[]);
- return`<div class="c hero"><small>Safe to spend till salary day (${S.ce})</small><div class="big">${f(m.safe)}</div><div class="bar" style="background:#ffffff40"><i style="width:${used}%;background:#fff"></i></div>
+ return`<div class="c hero"><small>Safe to spend till salary day (${S.ce})</small><div class="big">${f(m.safe)}</div><div class="bar" style="background:#0003"><i style="width:${used}%;background:var(--on,#fff)"></i></div>
  <div>Total spent <b>${f(m.out)}</b> of ${f(S.sal)}</div><div>${m.safe>0?`≈ <b>${f(m.safe/m.days)}</b> per day for ${m.days} days`:''} · ${msg}</div><small>Balance ${f(m.left)} − ${f(S.buf)} kept safe in your account</small></div>
  ${w.map(a=>`<div class="w ${a.c}" style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span>${a.t}</span><button class="s" onclick="sayK('${a.k}')" title="Play">🔊</button></div>`).join('')}
  <div class="c"><h2>Where your ${f(S.sal)} salary goes</h2>${flow.map(a=>`<div class="row"><span>${a[0]}</span><span><b>${f(a[1])}</b> <small>${(a[1]/S.sal*100).toFixed(0)}%</small></span></div>`).join('')}
@@ -165,10 +165,10 @@ function sp(m){const t=td>=S.cs&&td<=S.ce?td:S.ce,E=S.t.find(x=>x.id==EDI)||null
  const row=x=>`<div class="row"><span>${x.cat}${x.note?' · '+x.note:''}<br><small>${x.d} · ${x.mode=='cc'?'💳 '+S.cards[x.card||0].n:x.mode=='gpay'?'📱 GPay':'💵 Cash'}${x.l?` · ${x.l}L`:''}${x.sur?` · surcharge ${f(x.sur)}`:''}${x.d>S.ce&&x.mode=='cc'?' · <b class="warn">next bill</b>':''}</small></span><span><b>${f(x.amt)}</b> <button class="x" style="color:var(--g)" onclick="ed(${x.id})" title="Edit">✏️</button><button class="x" onclick="S.t=S.t.filter(y=>y.id!=${x.id});sv()">✕</button></span></div>`;
  const fu=S.t.filter(x=>x.cat=='Fuel'&&x.odo&&x.l).sort((a,b)=>a.odo-b.odo);let mil='';
  if(fu.length>1){const km=fu[fu.length-1].odo-fu[0].odo,l=sum(fu.slice(1).map(x=>x.l));mil=`<p>⛽ Mileage ≈ <b>${(km/l).toFixed(1)} km/L</b> · ≈ <b>${f(sum(fu.slice(1).map(x=>x.amt))/km)}/km</b></p>`}
- return`${cw(m)?`<div class="w ${m.ct>=S.lim&&S.lim>0?'':'wa'}">${cw(m)}</div>`:''}<div class="c" ${E?'style="border:2px solid var(--g)"':''}><h2>${E?'✏️ Edit spend':'➕ Add a spend'}</h2><div class="r"><input id="am" type=number placeholder="Amount ₹" value="${E?E.amt:''}"><select id="cat" onchange="sy()">${CATS.map(c=>`<option ${es('cat',c)}>${c}`).join('')}</select></div>
+ return`${cw(m)?`<div class="w ${m.ct>=S.lim&&S.lim>0?'':'wa'}">${cw(m)}</div>`:''}<div class="c" ${E?'style="border:2px solid var(--g)"':''}><h2>${E?'✏️ Edit spend':'➕ Add a spend'}</h2><div class="r"><input id="am" type=number placeholder="Amount ₹" value="${E?E.amt:''}" oninput="fc()"><select id="cat" onchange="sy()">${CATS.map(c=>`<option ${es('cat',c)}>${c}`).join('')}</select></div>
  <div class="r"><select id="md" onchange="sy()"><option value="cc" ${es('mode','cc')}>💳 Credit card<option value="gpay" ${es('mode','gpay')}>📱 GPay<option value="cash" ${es('mode','cash')}>💵 Cash/Debit</select><select id="cdx">${S.cards.map((c,i)=>`<option value="${i}" ${i==(E?E.card||0:S.card)?'selected':''}>${c.n}`).join('')}</select><input id="d" type=date value="${E?E.d:t}"></div>
  <div class="r"><input id="nt" type=text placeholder="Note (Swiggy, Goa trip)" style="width:100%" value="${E?esc(E.note||''):''}"></div>
- <div class="r" id="fe"><input id="li" type=number placeholder="Litres" value="${E&&E.l?E.l:''}"><input id="su" type=number placeholder="Surcharge ₹" value="${E&&E.sur?E.sur:''}"><input id="od" type=number placeholder="Odometer km" value="${E&&E.odo?E.odo:''}"></div>
+ <div class="r" id="fe"><input id="fpz" type=number step="0.01" placeholder="Price ₹/litre" value="${E?(E.p||S.fp||''):(S.fp||'')}" oninput="fc()"><input id="li" type=number placeholder="Litres (auto)" value="${E&&E.l?E.l:''}" oninput="this.dataset.m=1"><input id="su" type=number placeholder="Surcharge ₹ (auto)" value="${E&&E.sur?E.sur:''}" oninput="this.dataset.m=1"><input id="od" type=number placeholder="Odometer km" value="${E&&E.odo?E.odo:''}"><small id="fh" style="width:100%">Fuel auto-fill: litres = amount ÷ price per litre. Surcharge (credit card only) = ${S.fsr}% + ${S.fgst}% GST of the bill. You can overwrite either value.</small></div>
  <button class="b" onclick="ad()">${E?'Update spend':'Save spend'}</button>${E?'<button class="s" onclick="EDI=null;R()">Cancel</button>':''}<p class="mu" id="hint"></p>${cbar(m)}</div>
  ${cdue(m)}
  <div class="c"><h2>This cycle · ${f(m.spent)}</h2>${mil}${m.T.slice().reverse().map(row).join('')||'<small>Onnum illa. Konjam selavu pannunga 😄</small>'}</div>
@@ -177,9 +177,10 @@ function cdue(m){const E=S.it.filter(x=>x.st&&x.amt),n=m.T.filter(x=>x.mode=='cc
  return`<div class="c"><h2>💳 Card spends &amp; dues</h2>${R_('Spent on card this cycle ('+n+' spend'+(n==1?'':'s')+')',f(m.cc))}${m.ex?R_('Paid now via GPay (above '+f(S.lim)+' limit)','− '+f(m.ex),'warn'):''}${R_('Card spends to pay next month',f(m.cc-m.ex))}
  ${E.map(x=>R_(K[x.k][0]+' '+x.n+(x.left?' · '+x.left+' months':'')+' <small>(EMI / bill)</small>',f(x.amt))).join('')}${R_('<b>Total card dues for next month</b>','<b>'+f(m.cc-m.ex+m.stx)+'</b>','ok')}${m.nx?R_('Card spends after salary day (goes to the following bill)',f(m.nx)):''}
  <small>Add EMIs or bills to pay from next month in Monthly → Add recurring item.</small></div>`}
-function sy(){const c=$('cat').value,m=$('md').value;$('fe').style.display=c=='Fuel'||c=='Car service'?'flex':'none';$('cdx').style.display=m=='cc'?'':'none';$('su').style.display=$('li').style.display=c=='Fuel'?'':'none';
- $('hint').textContent=m=='cc'&&$('d').value>S.ce?'This date is after salary day, so it goes into next month\'s card bill.':'Card spends are paid from next salary, so they do not reduce this month\'s balance (up to your early-pay limit).'}
-async function ad(){const a=+$('am').value,cmode=$('md').value=='cc';if(!a)return toast('Enter amount first');const o={d:$('d').value,cat:$('cat').value,amt:a,mode:$('md').value,card:+$('cdx').value,note:$('nt').value,l:+$('li').value,sur:+$('su').value,odo:+$('od').value},ex=EDI&&S.t.find(x=>x.id==EDI),upd=!!ex;if(ex)Object.assign(ex,o);else S.t.push(Object.assign({id:id()},o));EDI=null;await sv(1);const w=cw(calc());if(cmode&&w)toast(w,5000);else toast(upd?'✅ Spend updated':'✅ Spend saved')}
+function sy(){const c=$('cat').value,m=$('md').value;$('fe').style.display=c=='Fuel'||c=='Car service'?'flex':'none';$('cdx').style.display=m=='cc'?'':'none';$('su').style.display=$('li').style.display=$('fpz').style.display=$('fh').style.display=c=='Fuel'?'':'none';
+ $('hint').textContent=m=='cc'&&$('d').value>S.ce?'This date is after salary day, so it goes into next month\'s card bill.':'Card spends are paid from next salary, so they do not reduce this month\'s balance (up to your early-pay limit).';if(!EDI)fc()}
+function fc(){if($('cat').value!='Fuel')return;const a=+$('am').value,p=+$('fpz').value,l=$('li'),u=$('su');if(!(l.dataset.m&&l.value))l.value=a&&p?(a/p).toFixed(2):'';if(!(u.dataset.m&&u.value))u.value=$('md').value=='cc'&&a?(a*(S.fsr||0)/100*(1+(S.fgst||0)/100)).toFixed(2):''}
+async function ad(){const a=+$('am').value,cmode=$('md').value=='cc';if(!a)return toast('Enter amount first');const o={d:$('d').value,cat:$('cat').value,amt:a,mode:$('md').value,card:+$('cdx').value,note:$('nt').value,l:+$('li').value,sur:+$('su').value,odo:+$('od').value,p:$('cat').value=='Fuel'?+$('fpz').value:0},ex=EDI&&S.t.find(x=>x.id==EDI),upd=!!ex;if(o.p>0)S.fp=o.p;if(ex)Object.assign(ex,o);else S.t.push(Object.assign({id:id()},o));EDI=null;await sv(1);const w=cw(calc());if(cmode&&w)toast(w,5000);else toast(upd?'✅ Spend updated':'✅ Spend saved')}
 var EDI=null;function ed(i){EDI=i;tab='sp';R();scrollTo(0,0)}
 function mo(m){const gs=[['bills','🏠 Home & bills'],['emi','🏦 Loans / EMI – this month (car, housing…)'],['pm','🕘 Last month dues – paid this month (credit card EMI…)'],['inv','📈 Investments – auto every month']];
  const row=x=>`<div class="row" style="display:block"><div class="row" style="border:0;padding:0"><span>${K[x.k][0]} <b>${x.n}</b>${x.left?` <small>· ${x.left} months left</small>`:''}${x.st?'<br><small class="warn">Paid from next month – not deducted now</small>':''}</span><span>${x.st?'':`<button class="${x.a?'b':'s'}" onclick="pay(${x.id})">${x.a?'✓ Paid':'Mark paid'}</button> `}<button class="x" onclick="S.it=S.it.filter(y=>y.id!=${x.id});sv()">✕</button></span></div>
@@ -282,7 +283,7 @@ function more(m){const r=rew(S.card,m.T),c=S.cards[S.card],fs={on:'🟢 Auto-syn
  <div class="r"><label><small>5%+ cap ₹</small><br><input id="cp" type=number value="1000" style="width:80px"></label><label><small>Waiver %</small><br><input id="wp" type=number value="1" style="width:70px"></label><label><small>Min bill</small><br><input id="wm" type=number value="400" style="width:80px"></label><label><small>Max bill</small><br><input id="wx" type=number value="5000" style="width:80px"></label><label><small>Waiver cap</small><br><input id="wc" type=number value="250" style="width:80px"></label></div><button class="b" onclick="ac()">Add card</button>
  <p><small>Share code (copy to a friend, or paste theirs):</small></p><textarea id="sh" rows=3>${JSON.stringify(c)}</textarea><div class="r"><button class="s" onclick="navigator.clipboard&&navigator.clipboard.writeText($('sh').value);toast('Copied')">Copy</button><button class="b" onclick="try{S.cards.push(JSON.parse($('sh').value));sv()}catch(e){toast('Invalid code')}">Import</button></div></details></div>
  ${vcard()}
- ${pinCard()}<div class="c"><button class="s bad" onclick="if(window.__rs){localStorage.removeItem('kep2');location.reload()}else{window.__rs=1;toast('Tap again to erase ALL data')}">Reset everything</button></div>`}
+ ${fuelCard()}${thCard()}${pinCard()}<div class="c"><button class="s bad" onclick="if(window.__rs){localStorage.removeItem('kep2');location.reload()}else{window.__rs=1;toast('Tap again to erase ALL data')}">Reset everything</button></div>`}
 function ac(){const r={};CATS.forEach(c=>r[c]=+$('r_'+c.replace(' ','_')).value);S.cards.push({n:$('cn').value||'My card',r,cap:+$('cp').value,w:{p:+$('wp').value,min:+$('wm').value,max:+$('wx').value,cap:+$('wc').value}});sv()}
 function R(){$('nv').innerHTML=[['home','🏠','Home'],['sp','🧾','Spends'],['mo','🔁','Monthly'],['hy','📜','History'],['hl','📊','Health'],['mr','⚙️','More']].map(a=>`<button class="${tab==a[0]?'on':''}" onclick="tab='${a[0]}';scrollTo(0,0);R()"><b>${a[1]}</b>${a[2]}</button>`).join('');
  const m=calc();$('app').innerHTML={home,sp,mo,hy,hl,mr:more}[tab](m);if(tab=='sp')sy();auto(m);$('snd').textContent=S.snd?'🔊':'🔇';$('st').textContent=(fst=='on'?'🔄 ':'✓ ')+(last?'Saved '+last:'Auto-saves')}
@@ -296,6 +297,7 @@ function pForgot(){if(!FG){FG=1;$('lf').textContent='Tap again to ERASE data on 
 async function pSet(){const a=$('p1').value,b=$('p2')?$('p2').value:a;if(!/^\d{4,8}$/.test(a))return toast('PIN must be 4–8 digits');if(a!=b)return toast('PINs do not match');
  if(PN&&await pH($('p0').value)!=PN)return toast('Current PIN is wrong');const h=await pH(a);try{localStorage.setItem('kep_pin',h)}catch(e){return toast('Could not store the PIN in this browser')}PN=h;toast('🔒 PIN saved');R()}
 async function pOff(){if(await pH($('p0').value)!=PN)return toast('Enter your current PIN to remove it');PN='';try{localStorage.removeItem('kep_pin')}catch(e){}toast('PIN removed');R()}
+function fuelCard(){return`<div class="c"><h2>⛽ Fuel auto-calculation</h2><p class="mu">When you add a fuel spend, litres and surcharge are filled in for you.</p><div class="r"><label><small>Price ₹/litre</small><br><input type=number step="0.01" value="${S.fp||''}" onchange="S.fp=+this.value;sv()"></label><label><small>Surcharge %</small><br><input type=number step="0.1" value="${S.fsr}" onchange="S.fsr=+this.value;sv()"></label><label><small>GST on surcharge %</small><br><input type=number value="${S.fgst}" onchange="S.fgst=+this.value;sv()"></label></div><small>Typical card fuel surcharge is 1% plus 18% GST. Check your card statement and change the rates if yours differs. The price is remembered from your last fuel entry.</small></div>`}
 function pinCard(){const on=!!PN,ip=(id,ph)=>`<input id="${id}" type="password" inputmode="numeric" maxlength="8" placeholder="${ph}" style="width:130px">`;
  return`<div class="c"><h2>🔒 App PIN lock</h2><p class="mu">${on?'PIN is ON. The app asks for it when opened.':'Add a PIN so nobody can open your money details.'}</p>
  ${on?`<div class="r"><button class="b" onclick="pLock()">Lock now</button> Auto-lock <select onchange="try{localStorage.setItem('kep_pl',this.value)}catch(e){}toast('Auto-lock updated')">${[[0,'As soon as I leave the app'],[1,'After 1 min away'],[5,'After 5 min away'],[15,'After 15 min away'],[-1,'Only when I open the app']].map(a=>`<option value="${a[0]}" ${pl()==a[0]?'selected':''}>${a[1]}`).join('')}</select></div>
@@ -304,5 +306,63 @@ function pinCard(){const on=!!PN,ip=(id,ph)=>`<input id="${id}" type="password" 
  <small>This is a privacy screen lock, not encryption. The PIN is stored only on this device and is not included in backups, and backup files are not PIN-protected, so keep them safe. Forgot it? Use "Forgot PIN?" on the lock screen: it erases this device's data, then restore from a backup file.</small></div>`}
 document.addEventListener('visibilitychange',()=>{if(!PN)return;if(document.hidden)HID=Date.now();else{if(pl()>=0&&HID&&Date.now()-HID>=pl()*60000)pLock();HID=0}});
 if(PN)pLock();
+
+const PRE=[['Green','#15803d'],['Blue','#2563eb'],['Purple','#7c3aed'],['Pink','#db2777'],['Orange','#ea580c'],['Teal','#0d9488'],['Red','#dc2626'],['Indigo','#4f46e5'],['Gold','#b45309'],['Sky','#0284c7'],['Rose','#e11d48'],['Slate','#475569']];
+const thRGB=h=>{h=h.replace('#','');return[0,2,4].map(i=>parseInt(h.substr(i,2),16))};
+function thHSL(r,g,b){r/=255;g/=255;b/=255;const M=Math.max(r,g,b),m=Math.min(r,g,b),l=(M+m)/2;let h=0,s=0;if(M!=m){const d=M-m;s=l>.5?d/(2-M-m):d/(M+m);h=M==r?(g-b)/d+(g<b?6:0):M==g?(b-r)/d+2:(r-g)/d+4;h*=60}return[h,s*100,l*100]}
+function thHex(h,s,l){s/=100;l/=100;const a=s*Math.min(l,1-l),k=n=>{const q=(n+h/30)%12;return Math.round(255*(l-a*Math.max(-1,Math.min(q-3,9-q,1))))};return'#'+[k(0),k(8),k(4)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+const thC=(h,s,l)=>`hsl(${Math.round(h)} ${Math.round(Math.max(0,Math.min(100,s)))}% ${Math.round(Math.max(0,Math.min(100,l)))}%)`;
+const thLum=x=>{const[r,g,b]=thRGB(x).map(v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)});return .2126*r+.7152*g+.0722*b};
+function applyTh(){const c=/^#[0-9a-f]{6}$/i.test(S.th||'')?S.th:'#15803d',[h,s0,l0]=thHSL(...thRGB(c)),dk=!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches),
+ ts=s0<8?s0:Math.min(Math.max(s0,25),70),set=(k,v)=>document.documentElement.style.setProperty(k,v);
+ let L=l0;while(thLum(thHex(h,s0,L))>.22&&L>10)L-=2;const Pl=thHex(h,s0,L);
+ if(dk){set('--g',thHex(h,s0<8?s0:Math.max(s0,60),Math.min(Math.max(l0,60),72)));set('--on',thC(h,ts,8));set('--g2',thC(h,ts*.6,18));set('--bd',thC(h,ts*.5,24));set('--bg',thC(h,ts*.6,7));set('--cd',thC(h,ts*.5,12));set('--tx',thC(h,ts*.5,92));set('--mu',thC(h,ts*.3,68));set('--gd',thC(h,ts*.7,26))}
+ else{set('--g',Pl);set('--on','#fff');set('--g2',thC(h,ts,92));set('--bd',thC(h,ts*.6,85));set('--bg',thC(h,ts*.7,96));set('--cd','#fff');set('--tx',thC(h,ts*.6,10));set('--mu',thC(h,ts*.3,38));set('--gd',thC(h,ts*.8,22))}
+ const tint=thC(h,ts,92),lg=$('lg');if(lg){const[a,b,d,t]=lg.children;a.setAttribute('fill',Pl);b.setAttribute('fill',tint);d.setAttribute('stroke',Pl);t.setAttribute('fill',Pl)}
+ const sv='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="'+Pl+'"/><circle cx="32" cy="32" r="21" fill="'+tint+'"/><circle cx="32" cy="32" r="16.5" fill="none" stroke="'+Pl+'" stroke-width="2"/><text x="32" y="41" font-size="25" font-weight="800" text-anchor="middle" fill="'+Pl+'" font-family="system-ui,sans-serif">₹</text></svg>';
+ document.querySelectorAll('link[rel=icon],link[rel=apple-touch-icon]').forEach(l=>l.href='data:image/svg+xml,'+encodeURIComponent(sv));const mt=document.querySelector('meta[name=theme-color]');if(mt)mt.content=dk?thC(h,ts*.6,7):Pl}
+function prevTh(c){if(/^#[0-9a-f]{6}$/i.test(c)){S.th=c;applyTh()}}
+function setTh(c){c=String(c).trim();if(c[0]!='#')c='#'+c;if(/^#[0-9a-f]{3}$/i.test(c))c='#'+c.slice(1).split('').map(x=>x+x).join('');if(!/^#[0-9a-f]{6}$/i.test(c))return toast('Type a colour like #2563eb');S.th=c.toLowerCase();applyTh();sv()}
+function thCard(){const cur=(S.th||'#15803d').toLowerCase(),nm=(PRE.find(p=>p[1]==cur)||['Custom'])[0];
+ return`<div class="c"><h2>🎨 Theme colour</h2><p class="mu">Pick a colour for buttons, headers and highlights. It adapts to light and dark mode and is saved in your backup.</p>
+ <div class="r" style="gap:10px">${PRE.map(p=>`<button title="${p[0]}" aria-label="${p[0]}" onclick="setTh('${p[1]}')" style="width:38px;height:38px;border-radius:50%;padding:0;background:${p[1]};border:3px solid ${cur==p[1]?'var(--tx)':'transparent'}"></button>`).join('')}</div>
+ <small>Current: <b>${nm}</b> ${cur}</small>
+ <div class="r" style="margin-top:8px"><label>Custom <input id="thc" type="color" value="${cur}" style="width:54px;height:38px;padding:2px" oninput="$('thh').value=this.value;prevTh(this.value)"></label><input id="thh" type="text" value="${cur}" style="width:100px" maxlength="7" placeholder="#RRGGBB"><button class="b" onclick="setTh($('thh').value||$('thc').value)">Apply</button><button class="s" onclick="setTh('#15803d')">Reset to green</button></div></div>`}
+try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',applyTh)}catch(e){}
+applyTh();
+
+let pendR=0;
+function tick(){const t=iso(new Date());if(t!=td){td=t;pendR=1;toast('📅 New day - numbers refreshed',3500)}
+ if(pendR){const a=$('am');if(!(a&&a.value)){pendR=0;R()}}}
+setInterval(tick,30000);window.addEventListener('focus',tick);window.addEventListener('pageshow',tick);document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick()});
+
+var cq='';
+function cv(e){const t=e.match(/\d+\.?\d*%?|\.\d+%?|[+\-*\/]/g)||[];let i=0;
+ const num=()=>{let sg=1;while(t[i]=='-'||t[i]=='+'){if(t[i]=='-')sg=-sg;i++}const x=t[i++];if(x===undefined||/^[+\-*\/]$/.test(x))throw 0;return sg*(x.endsWith('%')?parseFloat(x)/100:parseFloat(x))};
+ const term=()=>{let v=num();while(t[i]=='*'||t[i]=='/'){const o=t[i++],q=num();v=o=='*'?v*q:v/q}return v};
+ let v=term();while(t[i]=='+'||t[i]=='-'){const o=t[i++],a=i;let q=term();if(i-a==1&&t[a].endsWith('%'))q=v*parseFloat(t[a])/100;v=o=='+'?v+q:v-q}
+ if(i<t.length||!isFinite(v))throw 0;return Math.round(v*100)/100}
+function cShow(){let r='';try{if(cq)r=cv(cq)}catch(e){r=''}
+ $('cex').textContent=(cq||'0').replace(/\*/g,'×').replace(/\//g,'÷').replace(/-/g,'−');$('crs').textContent=r===''?(cq?'…':'0'):(r<0?'-':'')+'₹'+Math.abs(r).toLocaleString('en-IN',{maximumFractionDigits:2});return r}
+function cK(k){const ops='+-*/',last=cq.slice(-1);
+ if(k=='C')cq='';else if(k=='B')cq=cq.slice(0,-1);
+ else if(k=='='){try{const v=cv(cq);cq=String(v)}catch(e){toast('Check the numbers')}}
+ else if(ops.includes(k)){if(!cq){if(k=='-')cq='-'}else if(ops.includes(last))cq=cq.slice(0,-1)+k;else cq+=k}
+ else if(k=='%'){if(/\d$/.test(cq)&&!/%$/.test(cq))cq+='%'}
+ else if(k=='.'){const seg=cq.split(/[+\-*\/]/).pop();if(!seg.includes('.')&&!seg.endsWith('%'))cq+=seg?'.':'0.'}
+ else{if(last=='%')return;cq+=k}
+ if(cq.length>40)cq=cq.slice(0,40);cShow()}
+function cTog(){const p=$('cpn'),o=p.style.display=='none';p.style.display=o?'block':'none';if(o)cShow()}
+function cUse(){let v;try{v=cv(cq)}catch(e){v=0}if(!(v>0))return toast('Calculate an amount first');if(tab!='sp'){tab='sp';R()}
+ $('am').value=v;$('am').dispatchEvent(new Event('input',{bubbles:true}));$('cpn').style.display='none';scrollTo(0,0);toast('Amount ₹'+v.toLocaleString('en-IN')+' added to the spend form')}
+(function(){const f=document.createElement('button');f.id='cfab';f.textContent='🧮';f.title='Calculator';f.setAttribute('aria-label','Calculator');f.onclick=cTog;
+ f.style.cssText='position:fixed;right:14px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:54px;height:54px;border-radius:50%;border:0;background:var(--g);color:var(--on,#fff);font-size:24px;box-shadow:0 3px 10px #0005;z-index:8;padding:0';
+ const p=document.createElement('div');p.id='cpn';p.style.cssText='display:none;position:fixed;right:14px;bottom:calc(86px + env(safe-area-inset-bottom,0px));width:min(300px,calc(100% - 28px));background:var(--cd);border:1px solid var(--bd);border-radius:16px;padding:12px;box-shadow:0 6px 24px #0005;z-index:8';
+ const keys=[['C','C'],['B','⌫'],['%','%'],['/','÷'],['7','7'],['8','8'],['9','9'],['*','×'],['4','4'],['5','5'],['6','6'],['-','−'],['1','1'],['2','2'],['3','3'],['+','+'],['0','0'],['.','.'],['=','=']];
+ const kb=(k,l)=>`<button onclick="cK('${k}')" style="padding:12px 0;font-size:17px;font-weight:700;${'/*-+'.includes(k)?'background:var(--g2);color:var(--g);border:0':k=='='?'background:var(--g);color:var(--on,#fff);border:0;grid-column:span 2':k=='C'||k=='B'?'color:var(--rd)':''}">${l}</button>`;
+ p.innerHTML=`<div class="hd"><b>🧮 Mini calculator</b><button class="x" onclick="cTog()" aria-label="Close">✕</button></div><div style="text-align:right;margin:6px 0"><small id="cex" style="word-break:break-all"></small><div id="crs" style="font-size:28px;font-weight:800;color:var(--g)">0</div></div><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">${keys.map(a=>kb(a[0],a[1])).join('')}</div><button class="b" style="width:100%;margin-top:8px" onclick="cUse()">Use as spend amount</button><small>Try: 250+120+80, or 3600÷4 to split a bill, or 2000+18% for GST.</small>`;
+ document.body.appendChild(f);document.body.appendChild(p);
+ document.addEventListener('keydown',e=>{if(p.style.display=='none'||/INPUT|TEXTAREA|SELECT/.test((e.target||{}).tagName||''))return;const k=e.key;
+  if(/^[0-9.%]$/.test(k)||'+-*/'.includes(k)){e.preventDefault();cK(k)}else if(k=='Enter'||k=='='){e.preventDefault();cK('=')}else if(k=='Backspace'){e.preventDefault();cK('B')}else if(k=='Escape')cTog()})})();
 R();
 </script></body></html>
